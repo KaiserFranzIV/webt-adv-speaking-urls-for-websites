@@ -1,0 +1,24 @@
+# Aktivieren des Rewrite Moduls
+RewriteEngine On
+
+# RewriteRule für Produkte (sprechende URLs wie /products/1)
+RewriteRule ^products/([0-9a-zA-Z\\-]+)$ products.php?product=$1 [L,QSA]
+
+# RewriteRule für Kategorien (sprechende URLs wie /categories/shoes)
+RewriteRule ^categories/([^/]+)$ categories.php?category=$1 [L,QSA]
+
+# RewriteRule für Kontaktseite (sprechende URL wie /contact)
+RewriteRule ^contact$ contact.php [L,QSA]
+
+RewriteRule ^start$ index.php [L,QSA]
+
+RewriteRule ^products$ products.php [L,QSA]
+
+RewriteRule ^categories$ categories.php [L,QSA]
+
+# RewriteRule für Fehlerseite (zeigt /error.php für nicht existierende Seiten an)
+ErrorDocument 404 /speaking_urls/404.php
+
+# Sicherstellen, dass .css, .js und andere statische Dateien nicht umgeleitet werden
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
