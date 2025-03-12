@@ -1,5 +1,5 @@
 <?php
-$category = isset($_GET['category']) ? htmlspecialchars($_GET['category']) : 'allgemein';
+$category = isset($_GET['category']) ? $_GET['category'] : 'allgemein';
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -7,16 +7,16 @@ $category = isset($_GET['category']) ? htmlspecialchars($_GET['category']) : 'al
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kategorieseite</title>
-    <link rel="stylesheet" href="/speaking_urls/styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <header>
         <h1>Kategorieseite</h1>
     </header>
     <nav class="navbar">
-        <a href="/speaking_urls/start">Start</a>
-        <a href="/speaking_urls/products/schuhe">Produkte</a>
-        <a href="/speaking_urls/contact">Kontakt</a>
+        <a href="/start">Start</a>
+        <a href="/products/schuhe">Produkte</a>
+        <a href="/contact">Kontakt</a>
     </nav>
     <div class="container content">
         <h1>Kategorie: <?php echo $category; ?></h1>

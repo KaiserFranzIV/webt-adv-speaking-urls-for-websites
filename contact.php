@@ -11,9 +11,9 @@
         <h1>Kontaktseite</h1>
     </header>
     <nav class="navbar">
-        <a href="/speaking_urls/start">Start</a>
-        <a href="/speaking_urls/products/schuhe">Produkte</a>
-        <a href="/speaking_urls/categories/elektronik">Kategorien</a>
+        <a href="/start">Start</a>
+        <a href="/products/schuhe">Produkte</a>
+        <a href="/categories/elektronik">Kategorien</a>
     </nav>
     <div class="container content">
         <h1>Kontakt</h1>
