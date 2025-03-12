@@ -11,13 +11,13 @@
         <h1>Willkommen auf der Startseite</h1>
     </header>
     <nav class="navbar">
-        <a href="/./products">Produkte</a>
-        <a href="/./categories">Kategorien</a>
-        <a href="/./contact">Kontakt</a>
+        <a href="/speaking_urls/webt-adv-speaking-urls-for-websites/products">Produkte</a>
+        <a href="/speaking_urls/webt-adv-speaking-urls-for-websites/categories">Kategorien</a>
+        <a href="/speaking_urls/webt-adv-speaking-urls-for-websites/contact">Kontakt</a>
     </nav>
     <div class="container content">
         <h1>Startseite</h1>
-        <p>Nutze sprechende URLs, wie <a href="/./products/schuhe">/produkte/schuhe</a>!</p>
+        <p>Nutze sprechende URLs, wie <a href="/speaking_urls/webt-adv-speaking-urls-for-websites/products/schuhe">/produkte/schuhe</a>!</p>
     </div>
     <footer>
         <p>&copy; 2025 Deine Website</p>
